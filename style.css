@@ -1,0 +1,53 @@
+/* CIS4004 Project #1 — Plain CSS only (no frameworks) */
+:root{
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #555;
+  --card: #f7f7f9;
+  --accent: #0a7cff;
+  --radius: 16px;
+  --maxw: 980px;
+}
+
+*{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; color:var(--fg); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+img{ max-width:100%; height:auto; }
+
+.container{ max-width: var(--maxw); margin-inline:auto; padding: 1rem; }
+
+.skip-link{
+  position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip-link:focus{ position:static; width:auto; height:auto; background:#ffd; padding:.5rem; }
+
+.site-header{ background:linear-gradient(180deg, #eef3ff, #fff); border-bottom:1px solid #e6e6ee; }
+.header-inner{ display:flex; gap:1rem; align-items:center; }
+.site-title{ margin:.25rem 0; font-size: clamp(1.5rem, 3vw, 2rem); }
+.contact a{ color: var(--accent); text-decoration:none; }
+.contact a:hover{ text-decoration:underline; }
+
+.avatar{ width:96px; height:96px; border-radius:50%; border:3px solid #e6e6ee; object-fit:cover; }
+
+.nav{ display:flex; flex-wrap:wrap; gap:.75rem; list-style:none; padding:0; margin:.5rem 0 0; }
+.nav a{ padding:.35rem .65rem; border-radius:999px; background:#eef3ff; color:#084ea8; text-decoration:none; }
+.nav a:focus, .nav a:hover{ outline:2px solid #cfe1ff; }
+
+.card{ background:var(--card); border:1px solid #ececf1; border-radius: var(--radius); padding:1rem; margin:1rem 0; }
+
+.item h3{ margin:0 0 .25rem; }
+
+.pill-list{ display:flex; flex-wrap:wrap; gap:.5rem; padding:0; list-style:none; }
+.pill-list li{ padding:.35rem .6rem; border-radius:999px; background:#eef3ff; }
+
+.project-links{ padding-left:1.25rem; }
+.project-figure{ margin:0; }
+.project-figure figcaption{ color:var(--muted); font-size:.9rem; }
+
+.site-footer{ border-top:1px solid #e6e6ee; background:#fafafa; }
+.site-footer .container{ display:flex; justify-content:center; padding:1.5rem 1rem; }
+
+/* Responsive helpers */
+@media (max-width: 680px){
+  .header-inner{ flex-direction:column; align-items:flex-start; }
+  .avatar{ width:84px; height:84px; }
+}

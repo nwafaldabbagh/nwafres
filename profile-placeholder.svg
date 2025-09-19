@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-label="Profile placeholder">
+  <rect width="100%" height="100%" fill="#e6eefb"/>
+  <circle cx="160" cy="120" r="60" fill="#9bbcf7"/>
+  <rect x="80" y="200" width="160" height="80" rx="40" fill="#9bbcf7"/>
+  <text x="50%" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#345" opacity=".8">Add your headshot</text>
+</svg>

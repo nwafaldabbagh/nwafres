@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROJECT TITLE — YOUR NAME</title>
+  <meta name="description" content="Project page for CIS 4004 Project #1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="back" href="index.html">&larr; Back to resume</a>
+      <h1 class="site-title">PROJECT TITLE</h1>
+    </div>
+  </header>
+
+  <main id="content" class="container" role="main">
+    <article class="card">
+      <figure class="project-figure">
+        <img src="images/project-placeholder.svg" alt="Illustration/screenshot representing the project">
+        <figcaption>Brief caption of what this image shows.</figcaption>
+      </figure>
+
+      <h2>Description</h2>
+      <p>Describe the project in a short paragraph: goal, what you built, and the outcome.</p>
+
+      <h2>Skills Learned</h2>
+      <ul>
+        <li>Example: Semantic HTML, CSS layout, accessibility patterns</li>
+        <li>Example: Debugging with browser devtools</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> YOUR NAME</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOUR NAME — Resume</title>
+  <meta name="description" content="Resume website for CIS 4004 Project #1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <img src="images/profile-placeholder.svg" class="avatar" alt="Professional headshot of YOUR NAME">
+      <div>
+        <h1 class="site-title">YOUR NAME</h1>
+        <p class="contact">
+          <a href="mailto:YOUR_NID@ucf.edu">YOUR_NID@ucf.edu</a> •
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <nav aria-label="Main">
+          <ul class="nav">
+            <li><a href="#objective">Objective</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#awards">Awards</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="container" role="main">
+    <section id="objective" class="card">
+      <h2>Professional Objective</h2>
+      <p>Brief 1–2 sentence objective about internship/full‑time goals, the technologies you enjoy, and the value you bring.</p>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <article class="item">
+        <h3>University of Central Florida (UCF) — B.S. in Information Technology</h3>
+        <p><time datetime="2022-08">Aug 2022</time> – <time datetime="2025-12">Dec 2025</time> (expected)</p>
+        <ul>
+          <li>Relevant Coursework: Networks, Cybersecurity, Web Systems, Data Structures.</li>
+          <li>Honors/Clubs: {/* add here or remove list item */}</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Relevant Experience</h2>
+      <article class="item">
+        <h3>Role — Company</h3>
+        <p><time>Month YYYY</time> – <time>Month YYYY</time> • Orlando, FL</p>
+        <ul>
+          <li>Achievement/result with measurable impact.</li>
+          <li>Tools/tech used.</li>
+        </ul>
+      </article>
+      <!-- Remove this section if no relevant experience per assignment rules -->
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul class="project-links">
+        <li><a href="project1.html">Project 1: TITLE HERE</a> — one‑line summary.</li>
+        <li><a href="project2.html">Project 2: TITLE HERE</a> — one‑line summary.</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul class="pill-list" role="list">
+        <li>HTML</li><li>CSS</li><li>Git</li><li>Linux</li><li>Python</li>
+      </ul>
+    </section>
+
+    <section id="awards" class="card">
+      <h2>Awards &amp; Honors</h2>
+      <ul>
+        <li>Dean’s List (YYYY)</li>
+      </ul>
+      <!-- Remove this entire section if nothing to report -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> YOUR NAME</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

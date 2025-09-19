@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Project placeholder">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#d7e3fb" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="#eef3ff"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  <rect x="40" y="40" width="560" height="280" fill="#cfe1ff" rx="12"/>
+  <text x="50%" y="50%" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" fill="#234" opacity=".9">Drop your project screenshot here</text>
+</svg>
